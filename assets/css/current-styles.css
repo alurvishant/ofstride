@@ -58,19 +58,19 @@ h4 {
 }
 
 .hero-homepage {
-    background: #ffffff URL('assets/images/hero-homepage-v01.jpg') no-repeat center -100px;
+    background: #ffffff URL('../../assets/images/hero-homepage-v01.jpg') no-repeat center -100px;
 }
 
 .hero-aboutus {
-    background: #ffffff URL('assets/images/hero-aboutus.jpg') no-repeat center -225px;
+    background: #ffffff URL('../../assets/images/hero-aboutus.jpg') no-repeat center -225px;
 }
 
 .hero-services {
-    background: #ffffff URL('assets/images/services.jpg') no-repeat center -170px;
+    background: #ffffff URL('../../assets/images/services.jpg') no-repeat center -170px;
 }
 
 .hero-contactus {
-    background: #ffffff URL('assets/images/contactus.jpg') no-repeat center -170px;
+    background: #ffffff URL('../../assets/images/contactus.jpg') no-repeat center -170px;
 }
 
 .hero-text {
