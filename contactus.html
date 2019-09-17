@@ -176,21 +176,32 @@
       </div>
 
       <div class="col-sm-6">
+        <form class="" method="post" id="feedback_form" action="send-feedback.php">
         <div class="row">
           <div class="col-sm-6 form-group">
-            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            <input class="form-control" id="feedback_name" name="feedback_name" placeholder="Name" type="text" required>
           </div>
           <div class="col-sm-6 form-group">
-            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            <input class="form-control" id="feedback_email" name="feedback_email" placeholder="Email" type="email" required>
           </div>
         </div>
-        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <textarea class="form-control" id="feedback_comments" name="feedback_comments" placeholder="Comment" rows="5" required></textarea><br>
         <div class="row">
-          <div class="col-sm-12 form-group">
-            <button class="btn btn-primary" type="submit">Send</button>
+          <div class="col-sm-3 form-group">
+            <input class="btn btn-primary" type="submit" id="feedback_submit" value="Submit">
+          </div>
+          <div class="col-sm-9 text-center form-group">
+            <div class="info_msg"></div>
           </div>
         </div>
-      </div>
+        <!-- <form class="form-inline">
+        <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-primary">Subscribe</button>
+        </div>
+        </form> -->
+      </form>
+    </div>
   </div>
 </div>
 <!-- End Section [Footer] -->
