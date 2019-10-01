@@ -1,33 +1,80 @@
 $(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
-    // Prevent default anchor click behavior
-    event.preventDefault();
+  // var d = new Date();
+  //
+  // page.currentYear = d.getFullYear();
 
-    // Store hash
-    var hash = this.hash;
+  $('#feedback_submit').on('click', function(e) {
+    e.preventDefault();
 
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function(){
 
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
+
+    var formdata = $('#feedback_form').serialize();
+    console.log(formdata);
+
+    $.ajax({
+        type: "POST",
+        url: "send-feedback.php",
+        data: formdata,
+        success: showHideInfo('.info_msg', 'Your feedback was submitted successfully !', 'success'),
+        error: showHideInfo('.info_msg', 'Error submitting feedback !', 'error')
     });
   });
 
-  // Slide in elements on scroll
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
 
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
+  // $('#client_submit').on('click', function(e) {
+  //   e.preventDefault();
+  //   var formdata = $('#client_form').serialize();
+  //   console.log(formdata);
+  //
+  //   $.ajax({
+  //       type: "POST",
+  //       url: "send-clientdata.php",
+  //       data: formdata,
+  //       success: showHideInfo('.info_msg', 'Your details have been sent successfully, we will get in touch at the earliest !', 'success'),
+  //
+  //       // function(){
+  //       //   console.log('client data sent successfully !');
+  //       //   $('.info_msg').addClass('alert alert-info').fadeIn(4000).css('display', 'block').html();
+  //       //   setTimeout(function() {
+  //       //     $('.info_msg').removeClass('alert alert-info').fadeOut(4000).css('display', 'none');
+  //       //   }, 5000);
+  //       //
+  //       // },
+  //       error: showHideInfo('.info_msg', 'Error submitting feedback, request you to please resubmit in some time !', 'error')
+  //
+  //       // function() {
+  //       //   console.log('error in sending client data !');
+  //       //   $('.info_msg').addClass('alert alert-danger').fadeIn(4000).css('display', 'block').html();
+  //       //   setTimeout(function() {
+  //       //     $('.info_msg').removeClass('alert alert-info').fadeOut(4000).css('display', 'none');
+  //       //   }, 5000);
+  //       // }
+  //   });
+  // });
+
+
+  function showHideInfo(target, msg, showhide) {
+    if(showhide == 'success') {
+      console.log('success !');
+      $(target).addClass('alert alert-info').fadeIn(4000).css('display', 'block').html(msg);
+      setTimeout(function() {
+        $(target).removeClass('alert alert-info').fadeOut(4000).css('display', 'none');
+      }, 5000);
+    }
+    else if(showhide == 'error') {
+      console.log('error !');
+      $(target).addClass('alert alert-danger').fadeIn(4000).css('display', 'block').html(msg);
+      setTimeout(function() {
+        $(target).removeClass('alert alert-info').fadeOut(4000).css('display', 'none');
+      }, 5000);
+    }
+  }
+
+  // function to check if an form element is valid
+  // function checkEmpty(ele){
+  //
+  // }
+
+
 })

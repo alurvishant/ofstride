@@ -15,16 +15,17 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
   <script src="assets/fontawesome-5.10.2/js/all.js"></script>
+  <script src="assets/js/scripts.js"></script>
 </head>
 
-<body id="homepage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="services">
 
 <!-- Start Section [Main Navigation] -->
   <div class="container-fluid main-nav">
     <div class="row">
       <div class="col">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="index.html"><img src="assets/images/logo_small.png"/></a>
+          <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"/></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -40,9 +41,9 @@
               <li class="nav-item active">
                 <a class="nav-link" href="services.html">services</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="portfolio.html">portfolio</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="contactus.html">contact us</a>
               </li>
@@ -59,69 +60,69 @@
     <div class="row">
       <div class="text-center hero-section hero-services">
         <h1 class="hero-text">We specialize in HR Consulting</h1>
-        <button class="btn btn-primary" id="butGetInTouch" href="#">GET IN TOUCH</button>
+        <a class="btn btn-primary" id="butGetInTouch" href="contactus.html">GET IN TOUCH</a>
       </div>
     </div>
   </div>
 <!-- End Section [Hero] -->
 
-<!-- Start Section [Values] -->
-  <div class="container margin-bottom">
-    <div class="row">
-      <div class="col page-title">
-        <h2>Services</h2>
-      </div>
+<!-- Start Section [Services section discription] -->
+<div class="container margin-bottom">
+  <div class="row">
+    <div class="col page-title">
+      <h2>Services</h2>
     </div>
-    <div class="row">
-      <div class="col-sm-3 services-item-icons">
-        <div class="circular-border"><i class="fas fa-wrench services-icons"></i></div>
-      </div>
-      <div class="col-sm-9">
-        <p><h4>HR Operations</h4>Entire scope of Employee management, on boarding, orientation, Grievance management and employe life cycle. We also provide employee counselling on various aspects of professional life and personal life through experts on the field.</p>
-      </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 services-item-icons" id="hroperations">
+      <div class="circular-border"><i class="fas fa-wrench services-icons"></i></div>
     </div>
-    <div class="row">
-      <div class="col-sm-9">
-        <p><h4>Recruitment</h4>End to end recruitment process for organization both in IT and Non IT sectors. We help organizations finding and hiring right human capital. We focus on finding, sourcing and recruiting best of the best professionals for Top Management jobs, C-Level jobs and freshers across  all Indian cities not limited to metros.</p>
-      </div>
-      <div class="col-sm-3 services-item-icons">
-        <div class="circular-border"><i class="fas fa-cogs services-icons"></i></div>
-      </div>
+    <div class="col-sm-9">
+      <p><h4>HR Operations</h4>Entire scope of Employee management, on boarding, orientation, Grievance management and employee life cycle management. We also provide employee counselling on various aspects of professional life and personal life through experts on the field.</p>
     </div>
-    <div class="row">
-      <div class="col-sm-3 services-item-icons">
-        <div class="circular-border"><i class="fas fa-users services-icons"></i></div>
-      </div>
-      <div class="col-sm-9">
-        <p><h4>Contract Staffing</h4>We also provide trained and qualified manpower on contractual basis and manage entire labour contract management with a principal of zero tolerance on non compliance.</p>
-      </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-9">
+      <p><h4>Recruitment</h4>End to end recruitment process for organization both in IT and Non IT sectors. We help organizations finding and hiring right human capital. We focus on finding, sourcing and recruiting best of the best professionals for Top Management jobs, C-Level jobs and freshers across  all Indian cities not limited to metros. Special focus on rural employment and agri based employment.</p>
     </div>
-    <div class="row">
-      <div class="col-sm-9">
-        <p><h4>Training and Development</h4>Conducting special training programs for Freshers/Mid level and Senior Level executives to meet all needs to make the human capital more productive and build a robust culture of growth sustainability and human centric.</p>
-      </div>
-      <div class="col-sm-3 services-item-icons">
-        <div class="circular-border"><i class="fas fa-book services-icons"></i></div>
-      </div>
+    <div class="col-sm-3 services-item-icons">
+      <div class="circular-border"><i class="fas fa-cogs services-icons"></i></div>
     </div>
-    <div class="row">
-      <div class="col-sm-3 services-item-icons">
-        <div class="circular-border"><i class="fas fa-list-alt services-icons"></i></div>
-      </div>
-      <div class="col-sm-9">
-        <p><h4>Pay roll processing and compliance</h4>Handling entire scope of compliance management of organizations such as ESIC/PF/Shop and Establishment/other Central government and state government statutory compliance</p>
-      </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 services-item-icons">
+      <div class="circular-border"><i class="fas fa-users services-icons"></i></div>
     </div>
-    <div class="row">
-      <div class="col-sm-9">
-        <p><h4>Legal consulting</h4>We have a very strong pool of legal experts across India who provide services on Drafting Contracts/agreements and vetting. Arbitration proceedings Legal solution for all matrimonial disputes Legal issues arising out of Employer-Employee relationship. Insurance related issues, Insolvency and Bankruptcy, Consumer related disputes, Appeals in High courts and Supreme Court.</p>
-      </div>
-      <div class="col-sm-3 services-item-icons">
-        <div class="circular-border"><i class="fas fa-balance-scale services-icons"></i></div>
-      </div>
+    <div class="col-sm-9">
+      <p><h4>Contract Staffing</h4>We also provide trained and qualified manpower on contractual basis and manage entire labour contract management with a principal of zero tolerance on noncompliance.</p>
     </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-9">
+      <p><h4>Training and Development</h4>Conducting special training programs for Freshers/Mid level and Senior Level executives to meet all needs to make the human capital more productive and build a robust culture of growth sustainability and human centric.</p>
+    </div>
+    <div class="col-sm-3 services-item-icons">
+      <div class="circular-border"><i class="fas fa-book services-icons"></i></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 services-item-icons">
+      <div class="circular-border"><i class="fas fa-list-alt services-icons"></i></div>
+    </div>
+    <div class="col-sm-9">
+      <p><h4>Payroll processing and compliance</h4>Handling entire scope of compliance management of organizations such as ESIC/PF/Shop and Establishment/other Central government and state government statutory compliance.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-9">
+      <p><h4>Legal consulting</h4>We have a very strong pool of legal experts across India who provide  services on Drafting Contracts/agreements and vetting. Arbitration proceedings Legal solution for all matrimonial disputes Legal issues arising out of Employer-Employee relationship. Insurance related issues, Insolvency and Bankruptcy ,Consumer related disputes, Appeals in High courts and Supreme Court.</p>
+    </div>
+    <div class="col-sm-3 services-item-icons">
+      <div class="circular-border"><i class="fas fa-balance-scale services-icons"></i></div>
+    </div>
+  </div>
 </div>
-<!-- End Section [Values] -->
+<!-- End Section [Services section discription] -->
 
 <!-- Start Section [Section divider] -->
   <div class="container margin-bottom">
@@ -135,7 +136,7 @@
 <div class="container-fluid footer">
   <div class="row">
       <div class="col-sm-3">
-        <a class="" href="#myPage"><img src="assets/images/logo_small.png"/></a>
+        <a class="" href="index.html"><img src="assets/images/logo_bw.png"/></a>
 
         <div class="footer-nav">
           <ul>
@@ -148,9 +149,9 @@
             <li class="nav-item">
               <a class="nav-link" href="services.html">services</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="portfolio.html">portfolio</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="contactus.html">contact us</a>
             </li>
@@ -160,7 +161,7 @@
 
       <div class="col-sm-3 footer-contact">
         <p class="title">Contact Us</p>
-        <p class="phone"><i class="fas fa-phone"></i> +91999999999</p>
+        <p class="phone"><i class="fas fa-phone"></i> <a href="tel:+918291401555">+918291401555</a></p>
         <p class="email"><i class="fas fa-at"></i> <a href="mailto:admin@ofstrideservices.com">admin@ofstrideservices.com</a></p>
         <p>
           <a href="#"><i class="fab fa-facebook social"></i></a>
@@ -170,18 +171,23 @@
       </div>
 
       <div class="col-sm-6">
+        <form class="" method="post" id="feedback_form" action="send-feedback.php">
+          <input type="hidden" name="action" value="feedback">
         <div class="row">
           <div class="col-sm-6 form-group">
-            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            <input class="form-control" id="feedback_name" name="feedback_name" placeholder="Name" type="text" required>
           </div>
           <div class="col-sm-6 form-group">
-            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            <input class="form-control" id="feedback_email" name="feedback_email" placeholder="Email" type="email" required>
           </div>
         </div>
-        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <textarea class="form-control" id="feedback_comments" name="feedback_comments" placeholder="Comment" rows="5" required></textarea><br>
         <div class="row">
-          <div class="col-sm-12 form-group">
-            <button class="btn btn-primary" type="submit">Send</button>
+          <div class="col-sm-3 form-group">
+            <input class="btn btn-primary" type="submit" id="feedback_submit" value="Submit">
+          </div>
+          <div class="col-sm-9 text-center form-group">
+            <div class="info_msg"></div>
           </div>
         </div>
         <!-- <form class="form-inline">
@@ -190,17 +196,13 @@
           <button type="button" class="btn btn-primary">Subscribe</button>
         </div>
         </form> -->
-      </div>
-
-
-      <!-- <a href="#homepage" title="To Top" class="">
-        <span class="glyphicon glyphicon-chevron-up">top</span>
-      </a>
-
-        <div class="input-group">
-
-        </div> -->
-
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-center copyright">
+      <small>&copy; Copyright 2019, OFSTRIDE SERVICES LLP</small>
+    </div>
   </div>
 </div>
 <!-- Start Section [Footer] -->

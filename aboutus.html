@@ -15,16 +15,17 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
   <script src="assets/fontawesome-5.10.2/js/all.js"></script>
+  <script src="assets/js/scripts.js"></script>
 </head>
 
-<body id="homepage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="aboutus">
 
 <!-- Start Section [Main Navigation] -->
   <div class="container-fluid main-nav">
     <div class="row">
       <div class="col">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="index.html"><img src="assets/images/logo_small.png"/></a>
+          <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"/></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -40,9 +41,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="services.html">services</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="portfolio.html">portfolio</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="contactus.html">contact us</a>
               </li>
@@ -59,21 +60,21 @@
     <div class="row">
       <div class="text-center hero-section hero-aboutus">
         <h1 class="hero-text">We specialize in HR Consulting</h1>
-        <button class="btn btn-primary" id="butGetInTouch" href="#">GET IN TOUCH</button>
+        <a class="btn btn-primary" id="butGetInTouch" href="contactus.html">GET IN TOUCH</a>
       </div>
     </div>
   </div>
 <!-- End Section [Hero] -->
 
-<!-- Start Section [Values] -->
+<!-- Start Section [About Us description] -->
   <div class="container margin-bottom">
     <div class="row">
-      <div class="col-sm-4">
-        <img src="assets/images/core-values.png" class="section-img">
+      <div class="col-sm-4 text-center aboutus-item-icon">
+        <div class="circular-border"><i class="fas fa-users aboutus-icons"></i></div>
       </div>
       <div class="col-sm-8 page-title">
         <h2>About Us</h2>
-        <p>We are a group of hard trained professionals being tested on every front of life be it at war front to business horizons and young minds with a dream to make an impact on every individual and where ethics and expectations becomes one. We have a pool of veterans with high skill set, vast knowledge and young talent equipped with the best know how of the latest technology and business environment who have a common dream of making the society a place to enjoy by empowering every single individual with best opportunity available across the the globe where his or her talent can make a difference in his/her own life as well as to the organization and society at large with a sense of responsibility pride and integrity.</p>
+        <p class="text-left">We are a group of hard trained professionals being tested on every front of life be it at war front to business horizons. We have a blend of veterans and young minds with a dream to make an impact on every individual and where ethics and expectations becomes one. Our resources are gifted with high skill set, vast knowledge equipped with the best know-how of the latest technology and business environment. We share a common dream of making the society a place to enjoy by empowering every single individual with best opportunity available across the the globe. Our goal is to assist organizations, which is our inspiration to offer a differential approach to human capital building.</p>
       </div>
     </div>
   </div>
@@ -87,170 +88,75 @@
   </div>
 <!-- End Section [Section Divider] -->
 
-<!-- Start Section [Services] -->
-<!-- <div class="container text-center margin-bottom" id="services">
+<!-- Start Section [Promotors] -->
+<div class="container text-center margin-bottom" id="promotors">
   <div class="row margin-bottom">
     <div class="col-12">
-      <h2>SERVICES</h2>
+      <h2>PROMOTORS</h2>
     </div>
   </div>
 
     <div class="row margin-bottom">
-      <div class="col">
-        <div class="circular-border"><i class="fas fa-users services-icons"></i></div>
-        <h4>Man Power</h4>
+      <div class="col-sm-4 card">
+        <div class="circular-border"><i class="fas fa-user promotors-icons"></i></div>
+        <h2>Raj Kumar Jha</h2>
+        <!-- <p class="title">CEO &amp; Chairman</p> -->
+        <p class="profile_desc">A seasoned professional with 30+ years of experience in Human Resource Management, Business Development, Operations and Administration. Have served for 16 years in one of the finest forces of India (Indian Air Force). Also handled array of roles in India's biggest fitness chain Talwalkars Better Value Fitness Ltd  for 14 years and contributing significantly to make the company as the most favoured brand in Fitness in India and Srilanka . Have a quest for learning and upgrading knowledge. Have completed a Post Graduate Diploma in Business Administration in HRD and Marketing Management from IIMS Kolkata and Certification in Business Strategy from IIM Lucknow.</p>
       </div>
-      <div class="col">
-        <div class="circular-border"><i class="fas fa-cogs services-icons"></i></div>
-        <h4>Recruitment</h4>
+      <div class="col-sm-4 card">
+        <div class="circular-border"><i class="fas fa-user promotors-icons"></i></div>
+        <h2>Chaitanya Pathak</h2>
+        <!-- <p class="title">CEO &amp; Chairman</p> -->
+        <p class="profile_desc">A budding cricket enthusiast having keen interest in solving mathematics and science quiz. Represented school and college at various levels currently pursuing BSc in Electronics from Delhi University. Trying to bring a perfect combination of sports science and business together with a zeal to prosper.</p>
       </div>
-      <div class="col">
-        <div class="circular-border"><i class="fas fa-book services-icons"></i></div>
-        <h4>Training &amp; Development</h4>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <div class="circular-border"><i class="fas fa-list-alt services-icons"></i></div>
-        <h4 class="wrap">Payroll processing &amp; compliance</h4>
-      </div>
-      <div class="col">
-        <div class="circular-border"><i class="fas fa-balance-scale services-icons"></i></div>
-        <h4>Legal Consulting</h4>
-      </div>
-      <div class="col">
-        <div class="circular-border"><i class="fas fa-wrench services-icons"></i></div>
-        <h4>Hard Work</h4>
+      <div class="col-sm-4 card">
+        <div class="circular-border"><i class="fas fa-user promotors-icons"></i></div>
+        <h2>Anuska Sharma</h2>
+        <!-- <p class="title">CEO &amp; Chairman</p> -->
+        <p class="profile_desc">An experienced education consultant guide and mentor. Having shaped many young talents to achieve their dreams and constantly looking for improving lives of others by imparting education and guiding young minds. A flair to make mentoring and training a major tool to bring change in human life. Currently pursuing Masters in Arts from IGNOU.</p>
       </div>
     </div>
-</div> -->
-<!-- End Section [Services] -->
+</div>
+<!-- End Section [Promotors] -->
 
-<!-- Container (Portfolio Section)-->
-<!-- <div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2><br>
-  <h4>What we have created</h4>
-  <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
-      </div>
-    </div>
-  </div><br>
-
-  <h2>What our customers say</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-     Indicators
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-     Wrapper for slides
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
-      </div>
-      <div class="item">
-        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
-      </div>
-      <div class="item">
-        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
-      </div>
-    </div>
-
-     Left and right controls
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div> -->
-
- <!--Container (Pricing Section)-->
-<!-- <div id="pricing" class="container-fluid">
-  <div class="text-center">
-    <h2>Leaders Profiles</h2>
-  </br>
-    <h4></h4>
-  </div>
-  <div class="row">
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1><img src="https://indranil-Dev.github.io/logo_small5050.png"/></h1>
-          <h1>Raj Kumar Jha</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>20</strong> Lorem</p>
-          <p><strong>15</strong> Ipsum</p>
-          <p><strong>5</strong> Dolor</p>
-          <p><strong>2</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-
-      </div>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-            <h1><img src="https://indranil-Dev.github.io/logo_small5050.png"/></h1>
-
-          <h1>Anuska Sharma</h1>
-        </div>
-        <div class="panel-body">
-           <h4><strong>Instructor/Guide</br></br> Dedicated, Resourceful, and Innovative</strong> </br></br>To help students change marginal grades into excellent grades, and supports colleagues and administration in facilitating each child's social and intellectual growth by creating an atmosphere of mutual respect and open communication</p>
-
-        </div>
-
-      </div>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-            <h1><img src="https://indranil-Dev.github.io/logo_small5050.png"/></h1>
-          <h1>Chaitanya Pathak</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>100</strong> Lorem</p>
-          <p><strong>50</strong> Ipsum</p>
-          <p><strong>25</strong> Dolor</p>
-          <p><strong>10</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-
-      </div>
+<!-- Start Section [Core Team] -->
+<div class="container text-center margin-bottom" id="coreteam">
+  <div class="row margin-bottom">
+    <div class="col-12">
+      <h2>CORE TEAM</h2>
     </div>
   </div>
-</div> -->
+
+    <div class="row margin-bottom">
+      <div class="col-sm-4 card">
+        <div class="circular-border"><i class="fas fa-user promotors-icons"></i></div>
+        <h2>Girindra Kumar Pathak</h2>
+        <!-- <p class="title">CEO &amp; Chairman</p> -->
+        <p class="profile_desc">A practicing advocate with experience of independent practice of 10 years at BAR since 2009 apart from preceding more than six years active involvement and participation for Legal Cell at Deptt of JAG (Air), Air HQ VB, New Delhi from 2003 to 2009. Specialized in handling cases of service matters, Civil, Industrial Disputes matters, Family Disputes cases, Arbitration etc.</p>
+      </div>
+      <div class="col-sm-4 card">
+        <div class="circular-border"><i class="fas fa-user promotors-icons"></i></div>
+        <h2>Arvind Kumar</h2>
+        <!-- <p class="title">CEO &amp; Chairman</p> -->
+        <p class="profile_desc">A practicing advocate with nine years of experience of handling before all courts of law at Delhi up to Supreme Court of India with vast experience and expertise of title search/due diligence reports for banks and other projects civil and consumer matter with special focus on Arbitration and Insolvency and Bankruptcy code (IBC) proceedings.</p>
+        <p class="profile_desc">Previous experience of working with Armed Forces Tribunal Delhi for one year and with State Bank of India for about two years and with Indian Air Force for about 20yrs. Holder of M.A. LL.B, PGDHRM and presently member of Bar  Council of India.</p>
+      </div>
+      <div class="col-sm-4 card">
+        <div class="circular-border"><i class="fas fa-user promotors-icons"></i></div>
+        <h2>Kamlesh Kumar Shukla</h2>
+        <!-- <p class="title">CEO &amp; Chairman</p> -->
+        <p class="profile_desc">Practicing advocate at Allahabad High Court and expert on handling cases of Services, Revenue, Constitutional and Criminal cases.</p>
+        <p class="profile_desc">Have also worked in Legal Cell of IAF from 1998-2009. Holds LLB from Osmania University and a member of Bar Council of India.</p>
+      </div>
+    </div>
+</div>
+<!-- End Section [Core Team] -->
 
 <!-- Start Section [Footer] -->
 <div class="container-fluid footer">
   <div class="row">
       <div class="col-sm-3">
-        <a class="" href="#myPage"><img src="assets/images/logo_small.png"/></a>
+        <a class="" href="index.html"><img src="assets/images/logo_bw.png"/></a>
 
         <div class="footer-nav">
           <ul>
@@ -263,9 +169,9 @@
             <li class="nav-item">
               <a class="nav-link" href="services.html">services</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="portfolio.html">portfolio</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="contactus.html">contact us</a>
             </li>
@@ -275,7 +181,7 @@
 
       <div class="col-sm-3 footer-contact">
         <p class="title">Contact Us</p>
-        <p class="phone"><i class="fas fa-phone"></i> +91999999999</p>
+        <p class="phone"><i class="fas fa-phone"></i> <a href="tel:+918291401555">+918291401555</a></p>
         <p class="email"><i class="fas fa-at"></i> <a href="mailto:admin@ofstrideservices.com">admin@ofstrideservices.com</a></p>
         <p>
           <a href="#"><i class="fab fa-facebook social"></i></a>
@@ -285,18 +191,23 @@
       </div>
 
       <div class="col-sm-6">
+        <form class="" method="post" id="feedback_form" action="send-feedback.php">
+          <input type="hidden" name="action" value="feedback">
         <div class="row">
           <div class="col-sm-6 form-group">
-            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            <input class="form-control" id="feedback_name" name="feedback_name" placeholder="Name" type="text" required>
           </div>
           <div class="col-sm-6 form-group">
-            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            <input class="form-control" id="feedback_email" name="feedback_email" placeholder="Email" type="email" required>
           </div>
         </div>
-        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <textarea class="form-control" id="feedback_comments" name="feedback_comments" placeholder="Comment" rows="5" required></textarea><br>
         <div class="row">
-          <div class="col-sm-12 form-group">
-            <button class="btn btn-primary" type="submit">Send</button>
+          <div class="col-sm-3 form-group">
+            <input class="btn btn-primary" type="submit" id="feedback_submit" value="Submit">
+          </div>
+          <div class="col-sm-9 text-center form-group">
+            <div class="info_msg"></div>
           </div>
         </div>
         <!-- <form class="form-inline">
@@ -305,17 +216,13 @@
           <button type="button" class="btn btn-primary">Subscribe</button>
         </div>
         </form> -->
-      </div>
-
-
-      <!-- <a href="#homepage" title="To Top" class="">
-        <span class="glyphicon glyphicon-chevron-up">top</span>
-      </a>
-
-        <div class="input-group">
-
-        </div> -->
-
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-center copyright">
+      <small>&copy; Copyright 2019, OFSTRIDE SERVICES LLP</small>
+    </div>
   </div>
 </div>
 <!-- Start Section [Footer] -->
